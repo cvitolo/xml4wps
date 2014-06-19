@@ -1,6 +1,6 @@
 #' This function provides a basic xml encoding used in the EVOp prototype wps services
 #' 
-#' @author Claudia Vitolo <claudia.vitolo@gmail.com>
+#' @author Claudia Vitolo
 #' 
 #' @description This function is used in wps processes based on R code to encode reults in xml format. It takes 3 inputs: datetime, idata and filePath. It transforms the input array 'idata' into an xml document based on a fixed tree. The datetime input is often the index of a zoo time series object, while the idata input is often the core data of a zoo time series object.
 #' 
@@ -17,11 +17,6 @@
 
 array2xml <- function(datetime,idata,filePath) {
 
-   # transform an input array into a xml document based on a fixed tree
-   # idata = data for generating XML
-   # filePath = file path for saving save 
-
-   library(XML)
    # from the package documentation:
    b = newXMLNode("element")
    saveXML(b)

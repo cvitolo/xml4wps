@@ -6,5 +6,7 @@ Date: 2014-06-19
 Author: Claudia Vitolo <claudia.vitolo@gmail.com>
 Maintainer: Claudia Vitolo <claudia.vitolo@gmail.com>
 Description: Basic xml encoding for prototype wps service
-License: GPL
+Depends:
+    XML
+License: GPL-3
 LazyLoad: yes
